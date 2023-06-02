@@ -1,3 +1,13 @@
+/* CUSTOM PROPERTIES */
+:root {
+  --body-bg: #f1f4ff;
+  --green: #4dc490;
+  --purple: #655af2;
+  --red: #f03535;
+  --text-color: #000;
+}
+
+
 html {
   box-sizing: border-box;
   height: 100%;
@@ -19,8 +29,8 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #fff;
-  color: #222;
+  background-color: var(--body-bg);
+  color: var(--text-color);
 }
 
 img {
