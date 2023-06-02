@@ -1,3 +1,54 @@
+/* FONTS */
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-SemiBold.eot');
+  src: url('../fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+      url('../fonts/Inter-SemiBold.woff') format('woff'),
+      url('../fonts/Inter-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.eot');
+  src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inter-Regular.woff2') format('woff2'),
+      url('../fonts/Inter-Regular.woff') format('woff'),
+      url('../fonts/Inter-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Bold.eot');
+  src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inter-Bold.woff2') format('woff2'),
+      url('../fonts/Inter-Bold.woff') format('woff'),
+      url('../fonts/Inter-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.eot');
+  src: url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Inter-Medium.woff2') format('woff2'),
+      url('../fonts/Inter-Medium.woff') format('woff'),
+      url('../fonts/Inter-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
 /* CUSTOM PROPERTIES */
 :root {
   --body-bg: #f1f4ff;
@@ -5,6 +56,7 @@
   --purple: #655af2;
   --red: #f03535;
   --text-color: #000;
+  --font-text: 'Inter', 'Arial', sans-serif
 }
 
 
@@ -26,7 +78,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: var(--font-text);
   font-size: 16px;
   line-height: 1.5;
   background-color: var(--body-bg);
@@ -43,9 +95,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1192px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
