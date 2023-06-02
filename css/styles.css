@@ -3,9 +3,9 @@
   font-family: 'Inter';
   src: url('../fonts/Inter-SemiBold.eot');
   src: url('../fonts/Inter-SemiBold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Inter-SemiBold.woff2') format('woff2'),
-      url('../fonts/Inter-SemiBold.woff') format('woff'),
-      url('../fonts/Inter-SemiBold.ttf') format('truetype');
+    url('../fonts/Inter-SemiBold.woff2') format('woff2'),
+    url('../fonts/Inter-SemiBold.woff') format('woff'),
+    url('../fonts/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -15,9 +15,9 @@
   font-family: 'Inter';
   src: url('../fonts/Inter-Regular.eot');
   src: url('../fonts/Inter-Regular.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Inter-Regular.woff2') format('woff2'),
-      url('../fonts/Inter-Regular.woff') format('woff'),
-      url('../fonts/Inter-Regular.ttf') format('truetype');
+    url('../fonts/Inter-Regular.woff2') format('woff2'),
+    url('../fonts/Inter-Regular.woff') format('woff'),
+    url('../fonts/Inter-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -27,9 +27,9 @@
   font-family: 'Inter';
   src: url('../fonts/Inter-Bold.eot');
   src: url('../fonts/Inter-Bold.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Inter-Bold.woff2') format('woff2'),
-      url('../fonts/Inter-Bold.woff') format('woff'),
-      url('../fonts/Inter-Bold.ttf') format('truetype');
+    url('../fonts/Inter-Bold.woff2') format('woff2'),
+    url('../fonts/Inter-Bold.woff') format('woff'),
+    url('../fonts/Inter-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
   font-display: swap;
@@ -39,9 +39,9 @@
   font-family: 'Inter';
   src: url('../fonts/Inter-Medium.eot');
   src: url('../fonts/Inter-Medium.eot?#iefix') format('embedded-opentype'),
-      url('../fonts/Inter-Medium.woff2') format('woff2'),
-      url('../fonts/Inter-Medium.woff') format('woff'),
-      url('../fonts/Inter-Medium.ttf') format('truetype');
+    url('../fonts/Inter-Medium.woff2') format('woff2'),
+    url('../fonts/Inter-Medium.woff') format('woff'),
+    url('../fonts/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -106,4 +106,65 @@ img {
 /* MAIN CONTENT */
 .main-content {
   flex-grow: 1;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+/* HERO SECTION*/
+.intro-page {
+  display: flex;
+}
+
+.hero {
+  --text-color: #fff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 570px;
+  border-radius: 20px;
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.hero-top {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 55px 60px;
+  background-color: #222;
+  background-image: url('../images/hero-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.hero-badge {
+  border: 1px solid var(--text-color);
+  font-size: 14px;
+  font-size: 500;
+  line-height: normal;
+  padding: 5px 15px;
+  border-radius: 41px;
+  margin-bottom: 60px;
+}
+
+.hero-heading {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 36px;
+  line-height: 46px;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.hero-bottom {
+  background-color: var(--green);
+  text-align: center;
+  font-size: 19px;
+  padding: 28px;
 }
