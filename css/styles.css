@@ -91,6 +91,13 @@ img {
 }
 
 
+*:focus {
+  outline: 2px dotted var(--purple);
+  outline-offset: 2px;
+
+}
+
+
 /* CONTAINER */
 
 .container {
@@ -110,11 +117,14 @@ img {
   padding-bottom: 80px;
 }
 
-/* HERO SECTION*/
+
+/* INTRO PAGE */
 .intro-page {
   display: flex;
 }
 
+
+/* HERO SECTION*/
 .hero {
   --text-color: #fff;
   display: flex;
@@ -167,4 +177,73 @@ img {
   text-align: center;
   font-size: 19px;
   padding: 28px;
+}
+
+/* SIGNUP FORM */
+
+.signup-form {
+  width: 100%;
+  max-width: 570px;
+  padding: 55px 60px 40px;
+  overflow: hidden;
+  margin-left: 12px;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.signup-form-heading {
+  margin-top: 0;
+  margin-bottom: 65px;
+}
+
+.signup-form-fiels {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 65px;
+}
+
+.signup-form-field {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  border: 0;
+  border-bottom: 1px solid #555;
+  color: #555;
+}
+
+.signup-form-field:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.signup-form-field:focus {
+  border-color: #000;
+  color: #000;
+  font-weight: 600;
+  font-size: 18px;
+  /* outline: 0; */
+}
+
+.signup-form-submit {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  line-height: 19px;
+  padding: 20px;
+  border: 0;
+  background-color: var(--purple);
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.signup-form-notice {
+  font-size: 11px;
+  line-height: 15px;
+  text-align: center;
+  color: #555;
+}
+
+.signup-form-notice-link {
+  color: var(--red);
+  font-weight: 500;
 }
