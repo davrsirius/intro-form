@@ -94,7 +94,6 @@ img {
 *:focus {
   outline: 2px dotted var(--purple);
   outline-offset: 2px;
-
 }
 
 
@@ -218,8 +217,8 @@ img {
   border-color: #000;
   color: #000;
   font-weight: 600;
-  font-size: 18px;
-  /* outline: 0; */
+  /* font-size: 18px; */
+  outline: 0;
 }
 
 .signup-form-submit {
